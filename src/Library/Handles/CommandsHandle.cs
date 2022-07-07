@@ -38,7 +38,7 @@ namespace Battleship
                     return;
                 }
 
-                string forInGame = "\n- ver tableros\n- aereo <fila> (ejemplo:aereo A)\n- vidente\n- satelite <columna (ejemplo: satelite 1)";
+                string forInGame = "\n- ver tableros\n- disparos barcos\n- disparos agua\n- aereo <fila> (ejemplo:aereo A)\n- vidente\n- satelite <columna (ejemplo: satelite 1)";
 
                 if (user.getStatus() == "start")
                 {

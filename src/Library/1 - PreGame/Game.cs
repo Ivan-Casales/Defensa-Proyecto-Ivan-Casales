@@ -13,6 +13,13 @@ namespace Battleship
     {
         private int Id {get; set;} // Id de la partida
 
+        /// <summary>
+        /// ShotsCounter se encarga de contador y retornar los distintos tipos de
+        /// disparos durante este juego.
+        /// </summary>
+        /// <returns></returns>
+        private ShotsCountHolder ShotsCounter = new ShotsCountHolder();
+
         private User User1 {get; set;}  // Usuario que jugará
         private User User2 {get; set;}  // Usuario que jugará
 
@@ -26,6 +33,13 @@ namespace Battleship
 
             this.User2 = user2;
         }
+
+
+        public ShotsCountHolder GetShotsCounter()
+        {
+            return this.ShotsCounter;
+        }
+
 
         public int GetId()
         {
